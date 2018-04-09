@@ -90,17 +90,19 @@ class Test extends Component {
       </div>
       <div className="center">
         <div className="form-group">
-          <label htmlFor="bed">Bed Rooms</label>
           <div className="row">
-            <input type="number" className="form-control col-md-6" id="bed" placeHolder="Min" onChange={(e) => this.handleBeds(e.target.value, this.state.bedMax)}/>
-            <input type="number" className="form-control col-md-6" id="bed" placeHolder="Max" onChange={(e) => this.handleBeds(this.state.bedMin, e.target.value)}/>
+            <label htmlFor="bed" className="col-md-1 margin">Bed Min:</label>
+            <input type="number" className="form-control col-md-4" id="bed" placeHolder="Min" onChange={(e) => this.handleBeds(e.target.value, this.state.bedMax)}/>
+            <label htmlFor="bed" className="col-md-1 margin">Bed Max:</label>
+            <input type="number" className="form-control col-md-4" id="bed" placeHolder="Max" onChange={(e) => this.handleBeds(this.state.bedMin, e.target.value)}/>
           </div>
         </div>
         <div className="form-group">
-          <label htmlFor="bath">Bath Rooms</label>
           <div className="row">
-            <input type="number" className="form-control col-md-6" id="bath" onChange={(e) => this.handleBaths(e.target.value, this.state.bathMax)}/>
-            <input type="number" className="form-control col-md-6" id="bath" onChange={(e) => this.handleBaths(this.state.bathMin, e.target.value)}/>
+            <label htmlFor="bath" className="col-md-1 margin">Bath Min:</label>
+            <input type="number" className="form-control col-md-4" id="bath" onChange={(e) => this.handleBaths(e.target.value, this.state.bathMax)}/>
+            <label htmlFor="bath" className="col-md-1 margin">Bath Max:</label>
+            <input type="number" className="form-control col-md-4" id="bath" onChange={(e) => this.handleBaths(this.state.bathMin, e.target.value)}/>
           </div>
         </div>
       </div>
